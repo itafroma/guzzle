@@ -14,8 +14,8 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "guzzlehttp/psr7": "~1.1",
-        "guzzlehttp/promises": "~1.0"
+        "guzzlehttp/psr7": "dev-function-guard",
+        "guzzlehttp/promises": "dev-function-guard"
     },
     "require-dev": {
         "ext-curl": "*",
@@ -37,5 +37,15 @@
         "branch-alias": {
             "dev-master": "6.0-dev"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/itafroma/psr7"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/itafroma/promises"
+        }
+    ]
 }
